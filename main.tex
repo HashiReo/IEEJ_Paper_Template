@@ -1,0 +1,73 @@
+\documentclass[a4paper,10pt]{jsarticle}
+
+% ========= 余白設定（電気学会の指定に準拠） =========
+\usepackage[top=30mm,bottom=27mm,left=18mm,right=18mm]{geometry}
+\setlength{\columnsep}{7mm} % カラム間7mm
+
+% ========= 必要パッケージ =========
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{multicol}
+
+\pagestyle{empty} % ページ番号を非表示
+
+\begin{document}
+
+% ===========================================
+% タイトル（1カラム幅で中央揃え）
+% ===========================================
+% 講演番号スペース（左上）
+\noindent\hspace*{20mm}\par\vspace{2mm}
+
+\begin{center}
+  {\large 強化学習を用いた蓄電池制御アルゴリズムでの\\
+  物理的制約に基づいた報酬設計}\\[2mm]
+
+  橋場 怜央＊，小平 大輔（筑波大学）\\[2mm]
+
+  {\normalsize
+  Proposal of Reward Design Based on Physical Constraints in\\
+  a Reinforcement Learning-Based Battery Control Algorithm\\
+  Reo Hashiba, Daisuke Kodaira (University of Tsukuba)
+  }
+\end{center}
+
+\vspace{3mm}
+
+\input{abstract} % ← abstract.tex を読み込む
+
+\vspace{5mm}
+
+% ===========================================
+% ここから本文2カラム
+% ===========================================
+\begin{multicols}{2}
+
+\section{はじめに}
+ここに本文を書きます。
+
+\section{DRLモデル}
+
+\subsection{環境}
+ここに本文を書きます。
+
+\subsection{行動}
+ここに本文を書きます。
+
+\subsection{制約と報酬設計}
+ここに本文を書きます。
+
+\section{学習結果}
+ここに本文を書きます。
+
+\section{まとめ}
+ここに本文を書きます。
+
+\bibliographystyle{junsrt}
+\bibliography{references}
+
+\end{multicols}
+
+\end{document}
