@@ -45,3 +45,4 @@
 - 図は imagesフォルダで管理してください。(main.tex内で例示しています)
 - 参考文献は references.bib で管理してください。（main.tex内で例示しています）
 - 細かい tex 記法は ChatGPT or Geminiに聞いてください。
+- 変更をGitHubにPushすると、自動的にActionが起動し、READMEの **最新のPDFをダウンロード** にリンクが掲載されます(少し時間がかかります)。

@@ -3,7 +3,7 @@
 % --- パッケージ設定 ---
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{newtxtext,newtxmath} % 英数字をTimes系に
+\usepackage{mathptmx} % 英数字をTimes系に
 \usepackage{float}               % [H]で図を強制配置
 \usepackage[top=30mm, bottom=27mm, left=18mm, right=18mm, columnsep=7mm]{geometry}
 \usepackage[dvipdfmx]{graphicx}
@@ -147,6 +147,7 @@
 
 \subsection{文献}
 文献は本文末尾に通し番号を付けて一括記載し，本文中の該当個所に引用番号を付けてください。文献の記載方法は，著者名，雑誌名，ページ，発行年の順序にしてください。
+(ex: \cite{Shahzadi1965}, \cite{Amano1975}と書くと文献番号が挿入できます。)
 
 \subsection{式および図}
 式および図は，図\ref{fig:example}および以下の記載例を参考にしてください。図面等を貼り付ける場合は，しわにならないように注意してください。また，図および表の説明には，英文を併記してください。
@@ -170,9 +171,9 @@
 % --- 参考文献 ---
 \begingroup
 \fontsize{8pt}{12pt}\selectfont
-\renewcommand{\refname}{文　献}
+\renewcommand{\refname}{文献}
 \bibliographystyle{junsrt}
-\bibliography{references/ref}
+\bibliography{references}
 \endgroup
 
 \end{document}
